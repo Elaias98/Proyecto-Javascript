@@ -1,31 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: wheat;
 }
 
-.full{
+.full {
     display: grid;
     grid-template-areas: "header header header" "main main main" "footer footer footer";
     grid-template-rows: 130px auto 200px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-header{
+header {
     grid-area: header;
     background-color: gold;
     height: 100%;
     width: 100%;
 }
-.head{
+
+.head {
     display: flex;
     flex-direction: row;
 }
 
-.ladoizqHeader{
+.ladoizqHeader {
     height: 100%;
     width: 20%;
     /* background-image: url(../img/images.jpg); */
@@ -34,18 +35,19 @@ header{
     align-items: center;
 }
 
-.ladodechoHeader{
+.ladodechoHeader {
     /* height: 100%; */
     width: 75%;
 }
-.elementosnav{
+
+.elementosnav {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
 }
 
-.elementosnav li{
+.elementosnav li {
     border-radius: 15px;
     background-color: goldenrod;
     padding: 12px;
@@ -53,13 +55,13 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.centrar{
+.centrar {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}  
+}
 
-.carrito{
+.carrito {
     width: 5%;
     display: flex;
     flex-direction: column;
@@ -68,44 +70,54 @@ header{
     bottom: 7px;
 }
 
-.cuadro-carro{
+.boton-carro {
+    padding: 0;
+    width: 50%;
+    height: 35px;
     background-color: white;
     max-width: fit-content;
     padding: 8px;
     border: groove 2px;
     border-radius: 10px;
+    border-style: none;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
     font-size: 15px;
     color: red;
     position: relative;
-    bottom: 30px; 
+    bottom: 30px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
-main{
+main {
     grid-area: main;
     background-color: #2F1000
 }
 
-.cuerpo{
+/* .cuerpo{
     height: 100%;
-    width: 100%;
+    width: 100%; 
     display: flex; 
     justify-content: space-around;
-    gap: 20px;
-}
+    gap: 20px;  
+} */
 
-.cartas{
+/* .cartas{
     display: flex;
     flex-direction: column;
     gap: 60px;
     margin: 20px;
-} 
+}  */
 
-footer{
+/* .imagenes{
+    height: 100px; 
+    width: 200px; 
+    overflow: hidden;
+}  */
+
+footer {
     grid-area: footer;
     background-color: black;
 }
